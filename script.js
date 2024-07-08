@@ -1,23 +1,13 @@
-// Pavyzdinis JavaScript kodas
+// JavaScript kodas
 document.addEventListener('DOMContentLoaded', function() {
-    const title = document.querySelector('.title');
+    const body = document.querySelector('body');
+    let backgroundColors = ['#4CAF50', '#2196F3', '#f44336', '#FF9800'];
+    let currentColorIndex = 0;
 
-    // Pavyzdinis animacijos efektas
-    title.addEventListener('mouseover', function() {
-        title.style.color = '#4CAF50';
-    });
+    function changeBackgroundColor() {
+        body.style.backgroundColor = backgroundColors[currentColorIndex];
+        currentColorIndex = (currentColorIndex + 1) % backgroundColors.length;
+    }
 
-    title.addEventListener('mouseout', function() {
-        title.style.color = '#fff';
-    });
-
-    // Pavyzdinis palydovų mygtuko funkcionalumas
-    const satelliteButton = document.querySelector('.satellite-button');
-    const satelliteContainer = document.querySelector('.satellite-container');
-
-    satelliteButton.addEventListener('click', function() {
-        satelliteContainer.classList.toggle('visible');
-    });
-
-    // Galima pridėti daugiau JavaScript funkcionalumo pagal poreikius
+    setInterval(changeBackgroundColor, 3000); // Keisti foną kas 3 sekundes
 });
