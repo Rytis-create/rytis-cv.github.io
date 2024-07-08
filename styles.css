@@ -1,20 +1,19 @@
 /* Baziniai stiliai */
 body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     transition: background-position 0.5s ease;
-}
-
-/* Animacija, kai pelė paspaudžiama ant fono */
-body:hover {
-    background-position: 50% 50%;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Puslapio turinio fonas */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -106,4 +105,29 @@ body:hover {
     color: #fff;
     margin-top: 20px;
     border-radius: 0 0 5px 5px;
+}
+
+/* Papildomi stiliai judančiam fonui */
+body:hover {
+    background-position: 50% 50%; /* Paveikslėlio judėjimo pozicija, kai pelė paspaudžiama */
+}
+
+/* Papildomi stiliai žaidimo taškams */
+.point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    cursor: pointer;
+}
+
+.point:nth-child(2) {
+    top: 100px;
+    left: 200px;
+}
+
+.point:nth-child(3) {
+    top: 150px;
+    left: 300px;
 }
