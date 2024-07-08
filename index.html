@@ -4,122 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mano Portfolio</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
-
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('background.jpg'); /* Pakeiskite į savo fono paveikslėlio pavadinimą */
-            background-size: cover;
-            z-index: -1;
-            animation: animateBackground 30s linear infinite; /* Fono animacija */
-        }
-
-        @keyframes animateBackground {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            z-index: 1;
-            color: white;
-        }
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button:hover {
-            background-color: #45a049;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        #spaceInvadersContainer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Puslapis fonas */
-            z-index: 2;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #f44336; /* Uždarymo mygtuko spalva */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .close-button:hover {
-            background-color: #d32f2f;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <h1>Mano Portfolio</h1>
-        <p>Sveiki atvykę į mano portfolio puslapį!</p>
-        <a href="cv.pdf" target="_blank" class="button">Atidaryti CV</a>
-        <button onclick="openSpaceInvaders()" class="button">Žaisti Space Invaders</button>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Mano Portfolio</h1>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">Apie mane</a></li>
+                    <li class="nav-item"><a href="#cv">CV</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact">Kontaktai</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about" class="section">
+            <div class="content">
+                <h2>Apie mane</h2>
+                <p>Sveiki atvykę į mano portfolio puslapį! Čia rasite informaciją apie mane.</p>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <div class="content">
+                <h2>Mano CV</h2>
+                <p>Čia galite peržiūrėti mano CV.</p>
+                <a href="cv.pdf" target="_blank" class="button">Atidaryti CV</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section">
+            <div class="content">
+                <h2>Portfolio</h2>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Pirmas projektas</h3>
+                        <p>Trumpas aprašymas apie pirmąjį projektą.</p>
+                        <a href="projektas1/index.html" target="_blank" class="project-link">Peržiūrėti projektą</a>
+                    </div>
+                    <div class="project">
+                        <h3>Antras projektas</h3>
+                        <p>Trumpas aprašymas apie antrąjį projektą.</p>
+                        <a href="projektas2/index.html" target="_blank" class="project-link">Peržiūrėti projektą</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content">
+                <h2>Kontaktai</h2>
+                <p>Susisiekite su manimi:</p>
+                <p>El. paštas: example@example.com</p>
+                <p>Telefonas: +370 123 45678</p>
+            </div>
+        </section>
     </div>
 
-    <!-- Space Invaders žaidimo dalis -->
-    <div id="spaceInvadersContainer" class="hidden">
-        <iframe src="space-invaders/index.html" frameborder="0" width="100%" height="100%"></iframe>
-        <button onclick="closeSpaceInvaders()" class="close-button">Uždaryti žaidimą</button>
-    </div>
-
-    <script>
-        function openSpaceInvaders() {
-            document.getElementById('spaceInvadersContainer').classList.remove('hidden');
-        }
-
-        function closeSpaceInvaders() {
-            document.getElementById('spaceInvadersContainer').classList.add('hidden');
-        }
-    </script>
+    <footer class="footer">
+        <p>&copy; 2024 Mano Portfolio</p>
+    </footer>
 </body>
 </html>
