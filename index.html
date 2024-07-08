@@ -3,64 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">Mano Portfolio</h1>
-            <div class="language-switcher">
+    <header>
+        <h1>Mano Portfolio</h1>
+        <div class="language-switcher">
             <button onclick="setLanguage('lt')">LT</button>
             <button onclick="setLanguage('en')">EN</button>
         </div>
-        </header>
+    </header>
 
-        <section class="section">
-            <div class="content">
-                <h2>Apie mane</h2>
-                <p>Sveiki atvykę į mano portfolio puslapį! Čia rasite informaciją apie mane.</p>
-            </div>
+    <div class="container">
+        <section>
+            <h2 data-lt="Apie mane" data-en="About me">Apie mane</h2>
+            <p data-lt="Čia yra informacija apie mane." data-en="Here is information about me.">Čia yra informacija apie mane.</p>
         </section>
-
-        <section class="section">
-            <div class="content">
-                <h2>Mano CV</h2>
-                <p>Čia galite peržiūrėti mano CV.</p>
-                <a href="cv.pdf" target="_blank" class="button">Atidaryti CV</a>
-            </div>
+        <section>
+            <h2 data-lt="Projektai" data-en="Projects">Projektai</h2>
+            <p data-lt="Štai mano projektai." data-en="Here are my projects.">Štai mano projektai.</p>
         </section>
-
-        <section class="section">
-            <div class="content">
-                <h2>Portfolio</h2>
-                <div class="projects">
-                    <div class="project">
-                        <h3>Pirmas projektas</h3>
-                        <p>Trumpas aprašymas apie pirmąjį projektą.</p>
-                        <a href="projektas1/index.html" target="_blank" class="project-link">Peržiūrėti projektą</a>
-                    </div>
-                    <div class="project">
-                        <h3>Antras projektas</h3>
-                        <p>Trumpas aprašymas apie antrąjį projektą.</p>
-                        <a href="projektas2/index.html" target="_blank" class="project-link">Peržiūrėti projektą</a>
-                    </div>
-                </div>
-            </div>
+        <section>
+            <h2 data-lt="Kontaktai" data-en="Contact">Kontaktai</h2>
+            <p data-lt="Mane galite rasti adresu..." data-en="You can reach me at...">Mane galite rasti adresu...</p>
         </section>
-
-        <section class="section">
-            <div class="content">
-                <h2>Kontaktai</h2>
-                <p>Susisiekite su manimi:</p>
-                <p>El. paštas: example@example.com</p>
-                <p>Telefonas: +370 123 45678</p>
-            </div>
-        </section>
-
     </div>
 
-    <footer class="footer">
+    <footer>
         <p>&copy; 2024 Mano Portfolio</p>
     </footer>
 
