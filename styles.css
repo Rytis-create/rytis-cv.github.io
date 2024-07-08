@@ -53,6 +53,8 @@ p {
     font-size: 1.2rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    background-color: #3e8e41; /* Kitokia spalva mygtukui, kai jis paryškinamas */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Šešėlis, kai pele užvedama ant mygtuko */
 }
 
 .button:hover {
