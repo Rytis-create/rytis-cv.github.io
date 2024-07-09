@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -19,14 +20,33 @@
         <section>
             <h2 data-lt="Apie mane" data-en="About me">Apie mane</h2>
             <p data-lt="Čia yra informacija apie mane." data-en="Here is information about me.">Čia yra informacija apie mane.</p>
+            <div class="about">
+                <div class="education">
+                    <h3 data-lt="Išsilavinimas" data-en="Education">Išsilavinimas</h3>
+                    <ul>
+                        <li data-lt="CodeAcademy - JAVA programuotojas" data-en="CodeAcademy - JAVA programmer">CodeAcademy - JAVA programuotojas</li>
+                        <li data-lt="Kauno Technologijų Mokymo Centras - Automobilių elektros mechanikas" data-en="Kaunas Technology Training Center - Auto electrical mechanic">Kauno Technologijų Mokymo Centras - Automobilių elektros mechanikas</li>
+                    </ul>
+                </div>
+                <div class="expertise">
+                    <h3 data-lt="Ekspertizė" data-en="Expertise">Ekspertizė</h3>
+                    <ul>
+                        <li data-lt="JAVA programavimas" data-en="Java programming">JAVA programavimas</li>
+                        <li data-lt="Kokybės kontrolė" data-en="Quality Control">Kokybės kontrolė</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
-            <h2 data-lt="Projektai" data-en="Projects">Projektai</h2>
-            <p data-lt="Štai mano projektai." data-en="Here are my projects.">Štai mano projektai.</p>
+            
         </section>
         <section>
             <h2 data-lt="Kontaktai" data-en="Contact">Kontaktai</h2>
-            <p data-lt="Mane galite rasti adresu..." data-en="You can reach me at...">Mane galite rasti adresu...</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <span data-lt="+37069232493" data-en="+37069232493">+37069232493</span></p>
+                <p><i class="fas fa-envelope"></i> <span data-lt="rytis.programer@gmail.com" data-en="rytis.programer@gmail.com">rytis.programer@gmail.com</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-lt="Molėtų raj." data-en="Molėtai district">Molėtų raj.</span></p>
+            </div>
         </section>
         <button onclick="openCV()" class="cv-button">Peržiūrėti CV</button>
     </div>
