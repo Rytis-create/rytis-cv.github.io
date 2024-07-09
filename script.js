@@ -9,3 +9,7 @@ function setLanguage(lang) {
         }
     });
 }
+
+function openCV() {
+    window.open('cv.pdf', '_blank');
+}
