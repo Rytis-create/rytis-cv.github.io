@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Mano Portfolio</h1>
         <div class="language-switcher">
             <button onclick="setLanguage('lt')">LT</button>
@@ -15,17 +15,20 @@
         </div>
     </header>
 
-    <body>
-    <div class="background"></div>
-    <div class="content">
-        <h1>Mano Portfolio</h1>
-        <p>Sveiki atvykę į mano portfolio puslapį!</p>
-        <a href="cv.pdf" target="_blank" class="button">Atidaryti CV</a>
-        <a href="space-invaders/index.html" target="_blank" class="button">Žaisti Space Invaders</a>
-        <!-- Pridėk daugiau mygtukų su kitais tavo projektų nuorodomis čia -->
-    </div>
-    <script src="script.js"></script>
-</body>
+    <div class="container">
+        <section>
+            <h2 data-lt="Apie mane" data-en="About me">Apie mane</h2>
+            <p data-lt="Čia yra informacija apie mane." data-en="Here is information about me.">Čia yra informacija apie mane.</p>
+        </section>
+        <section>
+            <h2 data-lt="Projektai" data-en="Projects">Projektai</h2>
+            <p data-lt="Štai mano projektai." data-en="Here are my projects.">Štai mano projektai.</p>
+        </section>
+        <section>
+            <h2 data-lt="Kontaktai" data-en="Contact">Kontaktai</h2>
+            <p data-lt="Mane galite rasti adresu..." data-en="You can reach me at...">Mane galite rasti adresu...</p>
+        </section>
+        <button onclick="openCV()" class="cv-button">Peržiūrėti CV</button>
     </div>
 
     <footer>
